@@ -1,0 +1,4 @@
+{
+  "plugins": ["syntax-dynamic-import", "transform-runtime"],
+  "presets": ["babel-preset-env", "stage-0", "react-native"]
+}

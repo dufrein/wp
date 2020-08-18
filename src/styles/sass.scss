@@ -1,0 +1,107 @@
+$color1: rgb(41, 53, 156) 00;
+
+.container {
+  position: relative;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainblock {
+  width: 100%;
+  height: 840px;
+  display: flex;
+  overflow: hidden;
+  .leftpart {
+    display: inline-block;
+    position: relative;
+    width: 77%;
+    height: 100%;
+    background: #f4f9e2;
+  }
+
+  .rightpart {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 23%;
+    background: #fff;
+    &__figure {
+      position: absolute;
+      width: 800px;
+      height: 500px;
+      left: -80%;
+      top: 0%;
+      overflow: hidden;
+      background: #edfdff;
+      border-radius: 320px;
+      transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
+    }
+
+    &__figurelight {
+      position: absolute;
+      width: 800px;
+      height: 500px;
+      left: 20%;
+      top: 2%;
+
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(237, 253, 255, 1) 35%,
+        rgba(255, 255, 255, 1) 100%
+      );
+      border-radius: 320px;
+      transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
+    }
+  }
+
+  .blockinfo {
+    min-width: 480px;
+    width: 45%;
+    margin: 240px 0 0 180px;
+    &__subtitle {
+      font-size: 24px;
+      color: #62d0df;
+    }
+
+    &__title {
+      font-size: 48px;
+      color: #22356f;
+      margin: 37px 0 60px;
+    }
+
+    &__description {
+      font-size: 24px;
+      color: #22356f;
+      line-height: 42px;
+    }
+
+    .buttons {
+      display: flex;
+      margin-top: 63px;
+      &__button {
+        width: 150px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: #fab63e;
+        cursor: pointer;
+        background: transparent;
+        &:last-child {
+          margin-left: 10px;
+        }
+      }
+
+      &__button_primary {
+        background: #fab63e;
+        color: #fff;
+      }
+    }
+  }
+}
