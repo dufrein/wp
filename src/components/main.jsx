@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import store from '../store';
+import {observer} from 'mobx-react';
 
 const changeCount = () => {
   const [number, setNumber] = useState(0);
@@ -10,6 +12,7 @@ const changeCount = () => {
 
 const Main = () => {
   const count = changeCount();
+  const data = store;
   return (
     <div className="mainblock">
       <div className="leftpart">
@@ -28,9 +31,9 @@ const Main = () => {
               className="buttons__button buttons__button_primary"
               // onClick={() => setCount(changeCount())}
             >
-              Who am I
+              {store.data.buttonText}
             </div>
-            <div className="buttons__button">What do I do</div>
+            <div className="buttons__button">What do I do {store.compute}</div>
           </div>
         </div>
       </div>
@@ -43,4 +46,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default observer(Main);

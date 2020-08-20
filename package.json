@@ -33,6 +33,8 @@
     "axios": "^0.19.2",
     "jquery": "^3.5.1",
     "lodash": "^4.17.20",
+    "mobx": "^5.15.6",
+    "mobx-react": "^6.2.5",
     "normalize.css": "^8.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
