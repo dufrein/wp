@@ -91,8 +91,9 @@ $color1: rgb(41, 53, 156) 00;
         align-items: center;
         font-size: 16px;
         color: #fab63e;
+        border: 1px solid #ddd;
         cursor: pointer;
-        background: transparent;
+        background: #c47682;
         &:last-child {
           margin-left: 10px;
         }
